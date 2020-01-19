@@ -1,9 +1,5 @@
-Practice
-========
 
-### Do these practice problems to learn basic Java coding
-
-In this set of practice problems, you'll practice using the following:
+In this set of Java Basic coding problems, you'll practice using the following:
 
 - Math operations
 - Methods
@@ -17,7 +13,7 @@ The skeleton code for these problems is at the following link: https://github.co
 
 ### Overview
 
-The goal of this set of practice problems is to help you gear up for learning Java. This course is a fast paced class, and incoming students are expected to know the basics of programming such as methods, loops, conditionals, and arrays before starting the class. If you took an intro programming class in another programming language, you should still be able to do these problems after reviewing basic Java syntax. The provided exercises are not meant to demonstrate good object-oriented design; their main purpose is to allow students to practice working with arrays, loops and conditionals. 
+The goal of this set of  problems is to help you gear up for learning Java. This course is a fast-paced class, and incoming students are expected to know the basics of programming such as methods, loops, conditionals, and arrays before starting the class. If you took an intro programming class in another programming language, you should still be able to do these problems after reviewing basic Java syntax. The provided exercises are not meant to demonstrate good object-oriented design; their main purpose is to allow students to practice working with arrays, loops and conditionals. 
 
 If you find yourself struggling with these problems, please consider completing an online Java course or carefully going through an introductory Java textbook *and* completing the programming exercises. Though there may be partial or complete solutions to some of these questions on various sites like StackOverflow, it is expected that you solve these problems *without* using the Internet as a resource. 
 
@@ -32,12 +28,12 @@ IntelliJ is an Integrated Development Environment (IDE). IDE is a piece of softw
 Github is a web-based version control system.  All assignments in this class will be posted and submitted using github. Create a github user account if you do not already have one and sign up for the [Student Developer Pack](https://education.github.com/pack).
 
 It is easy to access github from IntelliJ. Here is a video that shows you how to clone a github repository  (create a copy of it on your local machine)  in IntelliJ: https://www.youtube.com/watch?v=DRKrzN0LwUw
-Once you clone the skeleton code to IntelliJ, you can fill in the code in the provided Java classes and run each class to test if your methods work correctly (I added a main method to each class, although it's not ideal from the design point of view). There is no need for you to submit your code since this problems are just for practice.
+Once you clone the skeleton code to IntelliJ, you can fill in the code in the provided Java classes and run each class to test if your methods work correctly (I added a main method to each class, although it's not ideal from the design point of view). 
 
 ### Practice Questions
 
 This practice assignment contains the following classes: `ConversionsHelper`, `MathHelper`, `ArrayHelper`, and `StringHelper`. 
-To complete this practice assignment, complete each class as specified in the comments above each method and the `//TODO` notes in each class. It is recommended you complete the classes in the order specified below:
+To complete this assignment, complete each class as specified in the comments above each method and the `//TODO` notes in each class. It is recommended you complete the classes in the order specified below:
 
 1. `ConversionHelper`
 2. `MathHelper`
