@@ -10,6 +10,11 @@ public class ArrayHelper {
      * @param arr array of integers
      */
     public static void print(int[] arr) {
+        int y=0;
+        for (int i = 0; i <arr.length; i++) {
+            y=y+arr[i];
+        }
+        System.out.println(y);
         //TODO: Replace with your code.
     }
 
@@ -31,8 +36,11 @@ public class ArrayHelper {
      * @return product of all elements
      */
     public static int product(int[] arr) {
+        int total=1;
+        for (int i=0;i<arr.length;i++)
+            total=total*arr[i];
         //TODO: Replace with your code.
-        return 1;
+        return total;
     }
 
     /**
@@ -43,8 +51,13 @@ public class ArrayHelper {
      * @return
      */
     public static boolean threshold(int[] arr, int thres) {
+        for (int i = 0; i <arr.length ; i++) {
+            if(arr[i]>thres){
+                return false;
+            }
+        }
         //TODO: Replace with your code.
-        return false;
+        return true;
     }
 
     /** Returns true if elem is present in the array and false otherwise
@@ -56,6 +69,11 @@ public class ArrayHelper {
      * @return
      */
     public static boolean find(int[] arr, int elem) {
+        for (int i = 0; i <arr.length; i++) {
+            if(arr[i]==elem){
+                return true;
+            }
+        }
         //TODO: Replace with your code.
         return false;
     }
@@ -67,8 +85,14 @@ public class ArrayHelper {
      * @return
      */
     public static int countOccurrences(int[] arr, int elem) {
+        int y=0;
+        for (int i = 0; i <arr.length ; i++) {
+            if(arr[i]==elem){
+                y=y+1;
+            }
+        }
         //TODO: Replace with your code.
-        return 0;
+        return y;
     }
 
     /** Returns true if array of integers has duplicate elements,
@@ -81,6 +105,17 @@ public class ArrayHelper {
      * @return true if array has duplicates and false otherwise
      */
     public static boolean hasDuplicates(int[] arr) {
+        int y;
+        for (int i = 0; i <arr.length ; i++) {
+            y=arr[i];
+            for (int j = 0; j <arr.length ; j++) {
+                if(i!=j) {
+                    if (y == arr[j]) {
+                        return true;
+                    }
+                }
+            }
+        }
         return false;
     }
 

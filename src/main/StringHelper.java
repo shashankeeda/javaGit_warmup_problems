@@ -10,8 +10,14 @@ public class StringHelper {
      * @return the number of vowels
      */
     public static int countVowels(String message) {
-        //TODO: Replace with your code.
-        return 0;
+        int x=0;
+        for (int i = 0; i<message.length(); i++) {
+            char ch=message.charAt(i);
+            if(ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'||ch=='u'||ch=='y'){
+                x++;
+            }
+        }
+        return x;
     }
 
     /**
@@ -31,13 +37,34 @@ public class StringHelper {
      * @author Prof. Rollins
      */
     public static String encrypt(String message, int shift) {
-        //TODO: Replace with your code.
-        return null;
+        if(shift>=26){
+            return null;
+        }
+        int c;
+        char check;
+        for (int i = 0; i <message.length() ; i++) {
+            check=message.charAt(i);
+            c=check;
+            if(c<65||c>90&&c<97||c>122){
+                return null;
+            }
+        }
+        String s="";
+        int x=0;
+
+        for (int i = 0; i <message.length() ; i++) {
+            char ch=message.charAt(i);
+            int ASC=ch+shift;
+            char character=(char)ASC;
+            s=s+character;
+        }
+        //TODO: Replace with your code
+        return s;
     }
 
     /** Main method: runs methods of class StringHelper */
     public static void main(String[] args) {
-        String s = "hello";
+        String s = "hella";
         System.out.println("Original string: " + s);
         System.out.println("Number of vowels: " + StringHelper.countVowels(s));
         System.out.println("After encrypting: " + StringHelper.encrypt(s, 3));
